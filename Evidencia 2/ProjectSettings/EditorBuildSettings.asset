@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Terreno.unity
+    guid: e14c7047653fe0e47b684ba4df467859
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 6d3ce37a1aa2be14cbba98aa9196b75f
   m_configObjects: {}
