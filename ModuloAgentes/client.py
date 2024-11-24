@@ -118,15 +118,15 @@ if __name__ == "__main__":
     model = VigilanciaModel()
     model.setup()
 
-    # Cámara procesando un video inicial"C:\\Users\\luisd\\Downloads\\Isaias - Vision\\AgentesPython\\videos\\carretera.mp4"
-    camara = CamaraCliente(video_path="C:\\Users\\luisd\\Downloads\\Isaias - Vision\\AgentesPython\\videos\\carros.mp4")
+    # Cámara procesando un video inicial"./videos/carros.mp4"
+    camara = CamaraCliente(video_path="./videos/carros.mp4")
     camara.conectar()
     amenaza_detectada = camara.procesar_video()
 
     if amenaza_detectada:
         # Alertar al Dron
         print("Cámara: Amenaza detectada. Pasando alerta al Dron.")
-        dron = DronCliente(video_path="C:\\Users\\luisd\\Downloads\\Isaias - Vision\\AgentesPython\\videos\\carretera.mp4")
+        dron = DronCliente(video_path="./videos/carretera.mp4")
         dron.conectar()
         amenaza_dron = dron.patrullar()
 
